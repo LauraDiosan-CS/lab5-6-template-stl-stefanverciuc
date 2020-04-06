@@ -140,13 +140,21 @@
   <ItemGroup>
     <ClCompile Include="Carte.cpp" />
     <ClCompile Include="Repo.cpp" />
+    <ClCompile Include="Service.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Test.cpp" />
+    <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Carte.h" />
     <ClInclude Include="Repo.h" />
+    <ClInclude Include="Repo_Template.h" />
+    <ClInclude Include="Service.h" />
     <ClInclude Include="Test.h" />
+    <ClInclude Include="UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Carti.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
