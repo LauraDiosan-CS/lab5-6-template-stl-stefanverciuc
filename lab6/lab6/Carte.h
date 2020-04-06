@@ -22,4 +22,5 @@ public:
 
 	bool operator==(const Carte& s);
 	friend ostream& operator<<(ostream& os, const Carte& s);
+	friend istream& operator>>(istream&, Carte&);
 };

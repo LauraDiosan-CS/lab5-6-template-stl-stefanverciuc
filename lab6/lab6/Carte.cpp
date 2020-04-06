@@ -101,11 +101,30 @@ Carte& Carte::operator=(const Carte& s) {
 
 
 bool Carte:: operator==(const Carte& s) {
-	return strcmp(this->titlu, s.titlu) == 0;
+	return ( strcmp(this->titlu, s.titlu) == 0 && this->statut==s.statut);
 }
 
 ostream& operator<<(ostream& os, const Carte& s)
 {
 	os << s.titlu << " " << s.autor << " " << s.statut<<" ";
 	return os;
+}
+
+istream& operator>>(istream& is, Carte& s)
+{
+	cout << "Dati titlul: ";
+	char* nume = new char[10];
+	is >> nume;
+	cout << "Dati autorul: ";
+	char* autor = new char[10];
+	is >> autor;
+	cout << "Este imprumutata cartea?";
+	bool v;
+	cin >> v;
+	s.setTitlu(nume);
+	s.setAutor(autor);
+	s.setStatut(v);
+	delete[] nume;
+	delete[] autor;
+	return is;
 }
