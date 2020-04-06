@@ -1,0 +1,2 @@
+carte1 a 1
+carte2 b 0
